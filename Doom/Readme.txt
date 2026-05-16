@@ -108,7 +108,7 @@ Found a bug? Have a fix for the shotgun freeze? Contributions welcome!
 
 ## 📄 License
 
-[MIT]
+GPLv3
 
 ## 🙏 Credits
 
