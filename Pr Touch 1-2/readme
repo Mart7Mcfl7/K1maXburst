@@ -3,3 +3,21 @@ Attempt to re-write PR touch bed-leveling .py's in order to use on mainline
 work in progress, not ready
 
 K1_load_cell_probe = multiple hx11 support for mainline/kalico - needs flash to bed mcu but klipper should be happy with four load cell config, added corener aggregation
+
+default configs;
+
+
+Minimal printer.cfg
+
+  [k1_load_cell_probe]
+  sensor_type: hx711
+  corner_dout_pins: leveling_mcu:PA0, leveling_mcu:PA1, leveling_mcu:PA3,
+  leveling_mcu:PA4
+  corner_sclk_pins: leveling_mcu:PA2, leveling_mcu:PA5, leveling_mcu:PA6,
+  leveling_mcu:PA7
+  z_offset: 0.0
+  speed: 2.0
+  samples: 3
+
+  [stepper_z]
+  endstop_pin: probe:z_virtual_endstop
