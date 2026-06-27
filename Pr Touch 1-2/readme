@@ -1,3 +1,5 @@
 Attempt to re-write PR touch bed-leveling .py's in order to use on mainline
 
 work in progress, not ready
+
+K1_load_cell_probe = multiple hx11 support for mainline/kalico - needs flash to bed mcu but klipper should be happy with four load cell config, added corener aggregation
