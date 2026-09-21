@@ -1,3 +1,8 @@
+Untested on K1C. Back up the leveling chip's original firmware before flashing anything.
+
+
+
+
 Short answer — copy these Python extras into your Klipper “extras” folder, add the matching sections to your printer.cfg, flash the Creality leveling MCU with Klipper firmware, then restart Klipper and calibrate. Below are step‑by‑step instructions and example config snippets tailored for the files you showed.
 
 1) Prepare the Klipper extras
